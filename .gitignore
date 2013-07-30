@@ -5,3 +5,5 @@ tmp
 test
 config/database.yml
 config/initializers/quiet_assets.rb
+
+config/deploy.rb
