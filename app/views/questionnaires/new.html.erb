@@ -1,0 +1,20 @@
+<%= form_for @questionnaire do |f| %>
+	<%= render 'shared/error_messages', target: @questionnaire %>
+	<fieldset class="questionnaire generic-form">
+		<ul>
+			<li><label>国家汉办作风情况总体评价：</label><%= f.radio_button :holistic_estimation, 1 %>好 <%= f.radio_button :holistic_estimation, 2 %>较好 <%= f.radio_button :holistic_estimation, 3 %>一般 <%= f.radio_button :holistic_estimation, 4 %>差</li>
+		</ul>
+		<ul>
+			<li><label>国家汉办在形式主义、官僚主义、享乐主义、奢靡之风方面存在哪些突出问题：</label><%= f.text_area :answer_1, :class => 'text-area' %></li>
+		</ul>
+		<ul>
+			<li><label>对国家汉办进一步加强作风建设、改进为广大汉语教师志愿者服务方面的意见建议：</label><%= f.text_area :answer_2, :class => 'text-area' %></li>
+		</ul>
+		<ul>
+			<li><label>对贯彻落实《孔子学院发展规划（2012-2020）》，办好孔子学院方面的意见建议：</label><%= f.text_area :answer_3, :class => 'text-area' %></li>
+		</ul>
+	</fieldset>
+	<div class="action">
+		<%= link_to image_tag('btn_submit.png', :alt => '提交'), '#', :onclick => "submitForm('new_questionnaire')", :class => 'button' %>
+	</div>
+<% end %>

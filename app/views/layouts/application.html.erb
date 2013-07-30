@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>党的群众路线教育实践活动调查问卷</title>
+	<%= stylesheet_link_tag "application", :media => "all" %>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="container">
+		<div id="header"></div>
+		<div id="main">
+			<div id="content">
+				<%= yield %>
+			</div>
+		</div>
+		<div id="footer">
+			<p>主办：国家汉办 地址：北京市西城区德胜门外大街129号</p>
+		</div>
+	</div>
+</body>
+</html>
