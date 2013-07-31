@@ -1,7 +1,7 @@
 # -*- encoding : utf-8 -*-
 Mangnolia::Application.routes.draw do
   
-  root :to => 'questionnaires#show'
+  root :to => 'questionnaires#notice'
   resources :users
   resources :questionnaires
   match 'notice' => 'questionnaires#notice', :as => :notice
