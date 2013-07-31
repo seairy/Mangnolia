@@ -15,4 +15,5 @@ gem 'validates_email_format_of', :git => 'git://github.com/alexdunae/validates_e
 
 group :production do
   gem 'execjs'
+  gem 'therubyracer'
 end
