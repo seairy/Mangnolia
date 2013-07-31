@@ -7,7 +7,13 @@
 	<p>　　二、对我办进一步加强作风建设、改进为广大汉语教师志愿者服务方面有什么意见建议？</p>
 	<p>　　三、关于贯彻落实《孔子学院发展规划（2012-2020年）》，办好孔子学院方面有什么意见建议？</p>
 	<p>　　请于8月10日前，将《国家汉办作风情况调查表》反馈给国家汉办党委办公室。</p>
-	<p class="button"><%= link_to image_tag('btn_questionnaire.png'), new_questionnaire_path %></p>
+	<p class="button">
+		<% if @questionnaire.blank? %>
+			<%= link_to image_tag('btn_questionnaire.png'), new_questionnaire_path %>
+		<% else %>
+			<%= link_to image_tag('btn_questionnaire.png'), edit_questionnaire_path(@questionnaire) %>
+		<% end %>
+	</p>
 	<p>&nbsp;</p>
 	<p>　　谢谢您的热情参与！</p>
 	<p>&nbsp;</p>

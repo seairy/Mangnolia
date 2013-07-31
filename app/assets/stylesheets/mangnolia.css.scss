@@ -42,6 +42,9 @@ fieldset.generic-form {
 	margin: 0 auto;
 	padding: 20px 0;
 	border: 0;
+	legend {
+		text-align: left;
+	}
 	ul {
 		list-style: none;
 		li {
@@ -104,4 +107,19 @@ div.notice {
 			text-align: right;
 		}
 	}
+}
+
+p.notice {
+  margin: 0 auto;
+  padding: 7px 15px;
+  border: 2px solid #BD7;
+  width: 640px;
+  background: #DF9;
+  font-size: 13px;
+  color: green;
+}
+
+p.alert {
+  background: #C00;
+  color: #FFF;
 }

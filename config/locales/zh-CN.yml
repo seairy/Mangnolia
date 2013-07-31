@@ -199,7 +199,7 @@ zh-CN:
       <<: *errors
     attributes:
       user:
-        email: 邮件
+        email: 邮箱
         password: 密码
         password_digest: 密码
         name: 姓名

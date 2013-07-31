@@ -11,8 +11,8 @@ end
 gem 'jquery-rails'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'capistrano'
+gem 'validates_email_format_of', :git => 'git://github.com/alexdunae/validates_email_format_of.git'
 
 group :production do
   gem 'execjs'
-  gem 'therubyracer'
 end

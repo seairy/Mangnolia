@@ -13,6 +13,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
     if @user.save
+      @user.update_attribute :current_signined_at, Time.now
+      session[:user] = { id: @user.id, name: @user.name, last_signined_at: @user.last_signined_at }
       redirect_to notice_path, notice: '注册成功！'
     else
       render action: "new"
