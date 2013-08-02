@@ -18,7 +18,7 @@
 			<li><label>性别：</label><%= f.radio_button :gender, 1 %>男 <%= f.radio_button :gender, 2 %>女</li>
 		</ul>
 		<ul>
-			<li><label>职业：</label><%= f.text_field :occupation, :class => 'text-field' %></li>
+			<li><label>职业：</label><%= f.radio_button :occupation, 1 %>教师 <%= f.radio_button :occupation, 2 %>志愿者 <%= f.radio_button :occupation, 3 %>院长</li>
 		</ul>
 		<ul>
 			<li><label>所属孔院：</label><%= f.text_field :confucius_institute, :class => 'text-field' %></li>

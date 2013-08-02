@@ -6,6 +6,6 @@ class User < ActiveRecord::Base
   validates :email, presence: true, uniqueness: true, length: { maximum: 50 }, email_format: { :message => '不是有效的' }
   validates :name, presence: true, length: { maximum: 100 }
   validates :gender, presence: true
-  validates :occupation, presence: true, length: { maximum: 100 }
+  validates :occupation, presence: true
   validates :confucius_institute, presence: true, length: { maximum: 250 }
 end
